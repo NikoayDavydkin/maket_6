@@ -5,15 +5,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "webpack serve",
     "build-dev": "webpack",
-    "build-prod": "webpack --node-env=production",
+    "build": "webpack --node-env=production",
     "clear": "rd /s /q dist "
-
   },
   "keywords": [],
   "author": "",
