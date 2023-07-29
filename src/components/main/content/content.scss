@@ -1,0 +1,124 @@
+@import "./article/article.scss";
+@import "./brands/brands.scss";
+@import "./enumeration_repairs/enumeration_repairs.scss";
+@import "./footer/footer.scss";
+@import "./table_price/table_price.scss";
+
+$color_white: #ffffff;
+$color_transparent_white: #ffffffe0;
+$color_dark_white: #f8f8f8;
+$color_aqua: #41f6d7;
+$color_light_aqua: #b8ffec;
+$color_pink: #ff3e79;
+$color_black: #000000;
+$color_grey: #7e7e82;
+$color_light_grey: #eaeaea;
+
+.content {
+  width: 83%;
+  height: 2065px;
+  box-sizing: border-box;
+
+  .content__header-content {
+    margin-top: 50px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 48px;
+    border-left: 4px solid $color_aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      font-family: "TT Lakes Bold";
+      margin-left: 20px;
+    }
+
+    span {
+      font-family: "TT Lakes Medium";
+    }
+
+    .content__repair-status {
+      cursor: pointer;
+      display: flex;
+      box-sizing: border-box;
+      align-items: center;
+      width: 400px;
+      height: 48px;
+      justify-content: flex-end;
+
+      button {
+        margin-right: 20px;
+        margin-left: 10px;
+      }
+    }
+
+    @media (max-width: 1300px) {
+      .content__repair-status {
+        display: none;
+      }
+    }
+  }
+
+  .content__navigation-services {
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    li {
+      padding-top: 10px;
+      margin-left: 20px;
+      width: 230px;
+      color: $color_grey;
+      height: 40px;
+      box-sizing: border-box;
+      cursor: pointer;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .navigation-services_active {
+      border: 2px solid $color_light_aqua;
+      background-color: $color_white;
+    }
+
+    .navigation-services_none-active {
+      color: $color_grey;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  #navigation-services_3 {
+    display: none;
+  }
+
+  #navigation-services_4 {
+    display: none;
+  }
+
+  #navigation-services_5 {
+    display: none;
+  }
+
+  #navigation-services_6 {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  #navigation-services_2 {
+    display: none;
+  }
+}

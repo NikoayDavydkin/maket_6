@@ -1,0 +1,192 @@
+$color_white: #ffffff;
+$color_orange: orange;
+$color_green: rgb(47, 204, 16);
+$color_transparent_white: #ffffffe0;
+$color_dark_white: #f8f8f8;
+$color_aqua: #41f6d7;
+$color_light_aqua: #b8ffec;
+$color_pink: #ff3e79;
+$color_black: #000000;
+$color_grey: #7e7e82;
+$color_text_grey: #b5b6bc;
+$color_light_grey: #eaeaea;
+$color_transparent: rgba(255, 255, 255, 0);
+
+.order-call {
+  width: 513px;
+  height: 100%;
+  position: fixed;
+  background-color: $color_transparent;
+  top: 0;
+  right: 0;
+  z-index: 7;
+  box-sizing: border-box;
+
+  .order-call__block {
+    padding-top: 1px;
+    width: 73px;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: $color_transparent;
+    display: flex;
+    justify-content: center;
+
+    .order-call__close-button {
+      margin-top: 30px;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      border: none;
+      cursor: pointer;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .order-call__form {
+    width: 440px;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: $color_white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -1px 0px 20px 5px rgb(212, 209, 209);
+
+    .order-call__close-button-form {
+      margin-left: 30px;
+      margin-top: 30px;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      border: none;
+      cursor: pointer;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+
+    @media (min-width: 601px) {
+      .order-call__close-button-form {
+        display: none;
+      }
+    }
+
+    h1 {
+      font-family: "TT Lakes Bold";
+      margin-top: 30px;
+      box-sizing: border-box;
+      background-color: $color_white;
+      width: 100%;
+      height: fit-content;
+      border-left: 3px solid $color_aqua;
+      padding-left: 30px;
+    }
+
+    .order-call__form-content {
+      width: 100%;
+      height: fit-content;
+      background-color: $color_white;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      input {
+        margin-top: 30px;
+        width: 85%;
+        height: 48px;
+        box-sizing: border-box;
+        border: 1px solid $color_light_grey;
+        padding: 15px;
+        font-size: 16px;
+        font-family: "TT Lakes Medium";
+        border-radius: 5px;
+        background-color: $color_white;
+      }
+
+      input:focus {
+        outline: 1px solid $color_light_grey;
+      }
+
+      input:invalid {
+        outline: 1px solid $color_orange;
+        border: 1px solid $color_orange;
+      }
+
+      input:not(:focus):invalid {
+        outline: 1px solid $color_light_grey;
+        border: 1px solid $color_light_grey;
+      }
+
+      input:valid {
+        outline: 1px solid $color_green;
+        border: 1px solid $color_green;
+      }
+
+      ::-webkit-input-placeholder {
+        color: $color_text_grey;
+      }
+      ::-moz-placeholder {
+        color: $color_text_grey;
+      }
+      :-moz-placeholder {
+        color: $color_text_grey;
+      }
+      :-ms-input-placeholder {
+        color: $color_text_grey;
+      }
+
+      .order-call__info {
+        font-family: "TT Lakes Regular";
+        margin-top: 30px;
+        width: 85%;
+        height: fit-content;
+        font-size: 14px;
+        background-color: $color_white;
+        color: $color_grey;
+
+        a {
+          color: $color_pink;
+          background-color: $color_white;
+        }
+      }
+
+      .order-call__block-button-send {
+        background-color: $color_white;
+        margin-top: 30px;
+        width: 85%;
+        height: fit-content;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .order-call__block {
+      display: none;
+    }
+
+    .order-call__form {
+      width: 100%;
+    }
+  }
+}
+
+.order-call_none {
+  display: none;
+}
+
+.order-call_active {
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .order-call {
+    width: 100%;
+  }
+}

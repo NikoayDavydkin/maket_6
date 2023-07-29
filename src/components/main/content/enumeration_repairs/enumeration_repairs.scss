@@ -1,0 +1,157 @@
+$color_white: #ffffff;
+$color_transparent_white: #ffffffe0;
+$color_dark_white: #f8f8f8;
+$color_aqua: #41f6d7;
+$color_light_aqua: #b8ffec;
+$color_pink: #ff3e79;
+$color_black: #000000;
+$color_grey: #7e7e82;
+$color_light_grey: #eaeaea;
+
+.enumeration-repairs {
+  display: flex;
+  margin-top: 40px;
+  width: 100%;
+  height: 350px;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+
+  .swiper-enumination {
+    height: 205px;
+
+    .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      background-color: #dddddd;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: #b5b6bc;
+    }
+  }
+
+  .enumeration-repairs__title {
+    border-top: 1px solid $color_light_aqua;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    color: #7e7e82;
+    font-family: "TT Lakes Medium";
+    height: 40px;
+    background-image: linear-gradient(to left, $color_white, $color_dark_white);
+  }
+
+  .enumeration-repairs__buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 220px;
+    cursor: pointer;
+
+    img:hover {
+      border: 1px solid $color_pink;
+      border-radius: 3px;
+    }
+  }
+
+  .enumeration-repairs__buttons-more {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 220px;
+    cursor: pointer;
+
+    img:hover {
+      border: 1px solid $color_pink;
+      border-radius: 3px;
+    }
+  }
+
+  .enumeration-repairs_none {
+    display: none;
+  }
+
+  .enumeration-repairs_active {
+    display: flex;
+  }
+
+  .enumeration-repairs__read-more {
+    width: 100%;
+    padding-left: 15px;
+    box-sizing: border-box;
+    font-family: "TT Lakes Medium";
+    font-size: 16px;
+    display: flex;
+    margin-top: 10px;
+    cursor: pointer;
+    align-items: flex-end;
+    height: 20px;
+  }
+
+  @media (max-width: 600px) {
+    .enumeration-repairs__read-more {
+      display: none;
+    }
+
+    .enumeration-repairs__buttons {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .enumeration-repairs {
+    height: 300px;
+  }
+}
+
+.enumeration_active {
+  height: 520px;
+}
+
+@media (max-width: 1600px) {
+  #repairs__buttons_5 {
+    display: none;
+  }
+
+  #repairs__buttons_10 {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  #repairs__buttons_4 {
+    display: none;
+  }
+
+  #repairs__buttons_9 {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  #repairs__buttons_3 {
+    display: none;
+  }
+
+  #repairs__buttons_8 {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  #repairs__buttons_2 {
+    display: none;
+  }
+
+  #repairs__buttons_7 {
+    display: none;
+  }
+}

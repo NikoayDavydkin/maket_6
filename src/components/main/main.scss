@@ -1,0 +1,18 @@
+@import "./side-menu/side-menu.scss";
+@import "./content/content.scss";
+@import "./order-call/order-call.scss";
+
+$color_white: #ffffff;
+$color_transparent_white: #ffffffe0;
+$color_dark_white: #f8f8f8;
+$color_aqua: #41f6d7;
+$color_pink: #ff3e79;
+$color_black: #000000;
+$color_grey: #7e7e82;
+$color_light_grey: #eaeaea;
+
+.main {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+}

@@ -1,0 +1,85 @@
+@import "./components/fog/fog.scss";
+@import "./components/header/header.scss";
+@import "./components/main/main.scss";
+@import "./components/main/feedback/feedback.scss";
+
+@font-face {
+  font-family: "TT Lakes Regular";
+  src: url(./fonts/TTLakes-Regular.ttf);
+}
+
+@font-face {
+  font-family: "TT Lakes Medium";
+  src: url(./fonts/TTLakes-Medium.ttf);
+}
+
+@font-face {
+  font-family: "TT Lakes Bold";
+  src: url(./fonts/TTLakes-Bold.ttf);
+}
+
+$color_white: #ffffff;
+$color_dark_white: #f8f8f8;
+$color_aqua: #41f6d7;
+$color_pink: #ff3e79;
+$color_black: #000000;
+$color_grey: #7e7e82;
+
+* {
+  background-color: $color_dark_white;
+  padding: 0;
+  margin: 0;
+  color: #1b1c21;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  background-color: $color_white;
+
+  a {
+    text-decoration: none;
+    color: $color_black;
+  }
+
+  button {
+    border: none;
+    cursor: pointer;
+  }
+
+  @media (max-width: 600px) {
+    .swiper-table {
+      width: 260px;
+      height: 200px;
+    }
+
+    .swiper-enumination {
+      margin-top: 25px;
+      width: 240px;
+      height: 160px;
+    }
+
+    .swiper-brands {
+      margin-top: 25px;
+      width: 240px;
+      height: 72px;
+    }
+  }
+
+  @media (min-width: 601px) {
+    .swiper-table {
+      display: none;
+    }
+
+    .swiper-enumination {
+      display: none;
+    }
+
+    .swiper-brands {
+      display: none;
+    }
+  }
+}
